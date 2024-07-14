@@ -42,11 +42,11 @@ body {
 --------------------------------------------------NAVBAR NAVBAR NAVBAR-------------------------------------------
 -------------------------------------------------------------------------------------------------------------- */
 
-.navbar a{
+.navbar a {
   font-size: 15px;
 }
 
-.loginbutton{
+.loginbutton {
   width: 57px;
   height: auto;
   font-size: 12px;
@@ -58,24 +58,54 @@ body {
 --------------------------------------------------SLOGAN PORTALINDO----------------------------------------------
 -------------------------------------------------------------------------------------------------------------- */
 
-.slogan{
+.slogan {
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
 .indonesia {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .indonesia img {
   width: 300px;
   height: auto;
+  margin-bottom: 20px;
 }
 
 .caption {
-  margin-left: 20px;
-  max-width: 35%;
+  margin-top: 0;
+  width: 550px;
+}
+
+/* Add media query for responsive design */
+@media only screen and (min-width: 768px) {
+  .indonesia {
+    flex-direction: row;
+  }
+
+  .indonesia img {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .indonesia {
+    flex-direction: column;
+  }
+
+  .indonesia img {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .caption {
+    width: 100%;
+  }
 }
 
 /* --------------------------------------------------------------------------------------------------------------
@@ -88,10 +118,12 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .buttons button {
-  margin: 0 10px;
+  margin: 0 10px 10px 10px;
+  /* Tambahkan margin bawah untuk tombol agar tidak berhimpitan saat di handphone */
   padding: 10px 20px;
   background-color: var(--primary);
   color: white;
@@ -117,8 +149,8 @@ body {
 }
 
 .category img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   margin: 10px;
   border: 3px solid rgb(213, 213, 213);
@@ -207,31 +239,38 @@ strong {
   color: #888;
   padding: 70px 0;
 }
+
 .site-footer a {
   color: #777;
   position: relative;
   display: inline-block;
   text-decoration: underline;
 }
+
 .site-footer a:hover {
   color: #000;
   text-decoration: none;
 }
+
 .site-footer a:hover:before {
   background: #00204a;
 }
+
 .site-footer .footer-cta h2,
 .site-footer .footer-cta .h2 {
   font-size: 30px;
   color: #00204a;
 }
+
 .site-footer .btn:before {
   display: none;
 }
+
 .site-footer .widget {
   margin-bottom: 40px;
   display: block;
 }
+
 .site-footer .widget h3,
 .site-footer .widget .h3 {
   font-size: 12px;
@@ -240,15 +279,19 @@ strong {
   margin-bottom: 15px;
   color: #00204a;
 }
+
 .site-footer .widget .links {
   width: 150px;
 }
+
 .site-footer .widget .links li {
   margin-bottom: 10px;
 }
+
 .site-footer .social li {
   display: inline-block;
 }
+
 .site-footer .social li a {
   display: inline-block;
   width: 40px;
@@ -257,10 +300,12 @@ strong {
   background: #ccc;
   border-radius: 40%;
 }
+
 .site-footer .social li a:before {
   display: none;
 }
-.site-footer .social li a > span {
+
+.site-footer .social li a>span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -268,6 +313,7 @@ strong {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 .site-footer .social li a:hover {
   background: #00204a;
   color: #fff;
@@ -418,7 +464,9 @@ strong {
 }
 
 /*       Fix bug for IE      */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
   .rotating-card-container .card .back,
   .rotating-card-container .card .front {
     -ms-backface-visibility: visible;
