@@ -14,4 +14,4 @@ function showCategory(category) {
   });
 }
 
-showCategory("semua");
+showCategory("terbaru");
