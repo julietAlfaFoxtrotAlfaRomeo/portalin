@@ -1,0 +1,250 @@
+:root {
+    --primary: #d9232d;
+    --secondary: #4a5562;
+    --font-size: 16px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* remove the gap so it doesn't close */
+  }
+  
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: var(--secondary);
+  }
+  
+  .bg-merah {
+    background-color: var(--primary);
+    color: #fff;
+  }
+  
+  .bg-abu {
+    background-color: var(--secondary);
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* --------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------NAVBAR NAVBAR NAVBAR-------------------------------------------
+    -----------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------NAVBAR NAVBAR NAVBAR-------------------------------------------
+    -------------------------------------------------------------------------------------------------------------- */
+  
+  .navbar a {
+    font-size: 15px;
+  }
+  
+  .loginbutton {
+    width: 57px;
+    height: auto;
+    font-size: 12px;
+  }
+  
+  /* --------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------- CONTACT US CONTACT -------------------------------------------
+    -----------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------- CONTACT US CONTACT -------------------------------------------
+    -------------------------------------------------------------------------------------------------------------- */
+  
+  .contact_section {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .form_container .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .form_container .form-row .col-lg-6 {
+    flex: 1;
+  }
+  
+  .contact_section .heading_container {
+    margin-bottom: 25px;
+  }
+  
+  .contact_section .heading_container h2 {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+  
+  .contact_section .form_container input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    outline: none;
+    color: #101010;
+    background: #eeeeee;
+  }
+  
+  .contact_section .form_container input::-webkit-input-placeholder {
+    color: #000000;
+  }
+  
+  .contact_section .form_container input:-ms-input-placeholder {
+    color: #000000;
+  }
+  
+  .contact_section .form_container input::-ms-input-placeholder {
+    color: #000000;
+  }
+  
+  .contact_section .form_container input::placeholder {
+    color: #000000;
+  }
+  
+  .contact_section .form_container input.message-box {
+    height: 175px;
+  }
+  
+  .contact_section .form_container button {
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 55px;
+    background-color: #d9232d;
+    color: #ffffff;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid #313030;
+  }
+  
+  .contact_section .form_container button:hover {
+    background-color: transparent;
+    color: #bf1820;
+  }
+  
+  .contact_section .map_container {
+    height: 368px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 0;
+  }
+  
+  .contact_section .map_container .map {
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  
+  .contact_section .map_container .map #googleMap {
+    height: 100%;
+  }
+  
+  /* --------------------------------------------------------------------------------------------------------------
+  ---------------------------------------FOOTER FOOTER FOOTER FOOTE------------------------------------------------
+  -----------------------------------------------------------------------------------------------------------------
+  ---------------------------------------FOOTER FOOTER FOOTER FOOTER-----------------------------------------------
+  -------------------------------------------------------------------------------------------------------------- */
+  
+  .site-footer {
+    background: #efefef;
+    font-size: 14px;
+    color: #888;
+    padding: 70px 0;
+  }
+  
+  .site-footer a {
+    color: #777;
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+  }
+  
+  .site-footer a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .site-footer a:hover:before {
+    background: #00204a;
+  }
+  
+  .site-footer .footer-cta h2,
+  .site-footer .footer-cta .h2 {
+    font-size: 30px;
+    color: #00204a;
+  }
+  
+  .site-footer .btn:before {
+    display: none;
+  }
+  
+  .site-footer .widget {
+    margin-bottom: 40px;
+    display: block;
+  }
+  
+  .site-footer .widget h3,
+  .site-footer .widget .h3 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #00204a;
+  }
+  
+  .site-footer .widget .links {
+    width: 150px;
+  }
+  
+  .site-footer .widget .links li {
+    margin-bottom: 10px;
+  }
+  
+  .site-footer .social li {
+    display: inline-block;
+  }
+  
+  .site-footer .social li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background: #ccc;
+    border-radius: 40%;
+  }
+  
+  .site-footer .social li a:before {
+    display: none;
+  }
+  
+  .site-footer .social li a > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .site-footer .social li a:hover {
+    background: #00204a;
+    color: #fff;
+  }
+  
