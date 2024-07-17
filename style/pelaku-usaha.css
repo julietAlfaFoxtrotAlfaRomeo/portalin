@@ -1,0 +1,184 @@
+:root {
+  --primary: #d9232d;
+  --secondary: #4a5562;
+  --font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  /* remove the gap so it doesn't close */
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--secondary);
+}
+
+.bg-merah {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.bg-abu {
+  background-color: var(--secondary);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------NAVBAR NAVBAR NAVBAR-------------------------------------------
+    -----------------------------------------------------------------------------------------------------------------
+    --------------------------------------------------NAVBAR NAVBAR NAVBAR-------------------------------------------
+    -------------------------------------------------------------------------------------------------------------- */
+
+.navbar a {
+  font-size: 15px;
+}
+
+.loginbutton {
+  width: 57px;
+  height: auto;
+  font-size: 12px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------- PELAKU USAHA -------------------------------------------
+    -----------------------------------------------------------------------------------------------------------
+    -------------------------------------------------- PELAKU USAHA -------------------------------------------
+    -------------------------------------------------------------------------------------------------------------- */
+
+#provinsi-select,
+.nama-perusahaan,
+#kota-select {
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 9px;
+  width: 270px;
+}
+.judul-kota,
+.judul-provinsi,
+.judul-nama-perusahaan {
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.button-cari {
+  display: flex;
+  margin-top: 10px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+}
+.button-cari:hover {
+  background-color: #ccc;
+  color: #000;
+}
+.heading-table th {
+  border-bottom: 2px solid #000;
+}
+/* --------------------------------------------------------------------------------------------------------------
+  ---------------------------------------FOOTER FOOTER FOOTER FOOTE------------------------------------------------
+  -----------------------------------------------------------------------------------------------------------------
+  ---------------------------------------FOOTER FOOTER FOOTER FOOTER-----------------------------------------------
+  -------------------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+  background: #efefef;
+  font-size: 14px;
+  color: #888;
+  padding: 70px 0;
+}
+
+.site-footer a {
+  color: #777;
+  position: relative;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.site-footer a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.site-footer a:hover:before {
+  background: #00204a;
+}
+
+.site-footer .footer-cta h2,
+.site-footer .footer-cta .h2 {
+  font-size: 30px;
+  color: #00204a;
+}
+
+.site-footer .btn:before {
+  display: none;
+}
+
+.site-footer .widget {
+  margin-bottom: 40px;
+  display: block;
+}
+
+.site-footer .widget h3,
+.site-footer .widget .h3 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #00204a;
+}
+
+.site-footer .widget .links {
+  width: 150px;
+}
+
+.site-footer .widget .links li {
+  margin-bottom: 10px;
+}
+
+.site-footer .social li {
+  display: inline-block;
+}
+
+.site-footer .social li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background: #ccc;
+  border-radius: 40%;
+}
+
+.site-footer .social li a:before {
+  display: none;
+}
+
+.site-footer .social li a > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.site-footer .social li a:hover {
+  background: #00204a;
+  color: #fff;
+}
