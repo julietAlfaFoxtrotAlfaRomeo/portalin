@@ -58,61 +58,47 @@ body {
   --------------------------------------------------SLOGAN PORTALINDO----------------------------------------------
   -------------------------------------------------------------------------------------------------------------- */
 
-.slogan {
-  margin-top: 50px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
   
-}
+    .custom-container-slogan {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-.indonesia {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+    .custom-logo img {
+      width: 400px;
+    }
 
-.indonesia img {
-  width: 300px;
-  height: auto;
-  margin-bottom: 20px;
-}
+    .custom-content h2 {
+      font-size: 34px;
+      color: #000;
+      margin: 20px 0;
+      font-weight: bold;
+    }
 
-.caption {
-  margin-top: 0;
-  width: 550px;
-}
+    .custom-content p {
+      font-size: 16px;
+      color: #333;
+      margin-top: 40px;
+    }
 
-/* Add media query for responsive design */
-@media only screen and (min-width: 768px) {
-  .indonesia {
-    flex-direction: row;
-  }
+    .custom-buttons .custom-btn {
+      padding: 10px 20px;
+      margin: 10px 5px;
+      border: 2px solid #000;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      background-color: #fff;
+    }
 
-  .indonesia img {
-    margin-bottom: 0;
-    margin-right: 20px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .indonesia {
-    flex-direction: column;
-  }
-
-  .indonesia img {
-    margin-bottom: 20px;
-    margin-right: 0;
-  }
-
-  .caption {
-     max-width: 80%;
-    text-align: center;
-  }
-}
+    .custom-buttons .custom-btn:hover {
+      background-color: #000;
+      color: #fff;
+    }
 
 /* --------------------------------------------------------------------------------------------------------------
   --------------------------------------------------PRODUCT CATTEGORY----------------------------------------------

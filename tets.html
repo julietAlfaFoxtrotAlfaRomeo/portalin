@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kegiatan Dan Publikasi</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .container-jadwal {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .swiper-container {
+            padding: 20px 0;
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .event {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            width: 100%;
+            max-width: 360px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        .event-icon {
+            font-size: 30px;
+            margin-right: 20px;
+            color: #ff5722;
+            /* Warna icon */
+        }
+
+        .event-details {
+            text-align: left;
+            width: calc(100% - 50px);
+        }
+
+        .event-details h6 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .event-details p {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .event-details p+p {
+            margin-top: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .event {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .event-icon {
+                margin-bottom: 10px;
+            }
+
+            .event-details {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Jadwal Kegiatan Dan Publikasi</h1>
+    <div class="container-jadwal">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="event">
+                        <div class="event-icon">
+                            <i class="bx bx-calendar"></i>
+                        </div>
+                        <div class="event-details">
+                            <h6><strong>13th Jakarta International Jewellery Fair</strong></h6>
+                            <p><strong>Penyelenggara:</strong> Asosiasi Pengusaha Emas dan Permata Indonesia</p>
+                            <p><strong>Waktu Kegiatan:</strong> 18 Agustus 2022 - 21 Agustus 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event">
+                        <div class="event-icon">
+                            <i class="bx bx-calendar"></i>
+                        </div>
+                        <div class="event-details">
+                            <h6><strong>8th Jogja Expo 2022</strong></h6>
+                            <p><strong>Penyelenggara:</strong> Pemerintah Kota Yogyakarta</p>
+                            <p><strong>Waktu Kegiatan:</strong> 25 Agustus 2022 - 28 Agustus 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event">
+                        <div class="event-icon">
+                            <i class="bx bx-calendar"></i>
+                        </div>
+                        <div class="event-details">
+                            <h6><strong>Health Expo 2022</strong></h6>
+                            <p><strong>Penyelenggara:</strong> Palang Merah Indonesia (PMI) Jawa Tengah</p>
+                            <p><strong>Waktu Kegiatan:</strong> 14 September 2022 - 18 September 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event">
+                        <div class="event-icon">
+                            <i class="bx bx-calendar"></i>
+                        </div>
+                        <div class="event-details">
+                            <h6><strong>Kriyanusa</strong></h6>
+                            <p><strong>Penyelenggara:</strong> Dewan Kerajinan Nasional</p>
+                            <p><strong>Waktu Kegiatan:</strong> 21 September 2022 - 25 September 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event">
+                        <div class="event-icon">
+                            <i class="bx bx-calendar"></i>
+                        </div>
+                        <div class="event-details">
+                            <h6><strong>Sail Tidore Expo 2022</strong></h6>
+                            <p><strong>Penyelenggara:</strong> Kementerian / Lembaga RI</p>
+                            <p><strong>Waktu Kegiatan:</strong> 24 November 2022 - 29 November 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="event">
+                        <div class="event-icon">
+                            <i class="bx bx-calendar"></i>
+                        </div>
+                        <div class="event-details">
+                            <h6><strong>14th Jakarta International Jewellery Fair</strong></h6>
+                            <p><strong>Penyelenggara:</strong> Asosiasi Pengusaha Emas dan Permata Indonesia</p>
+                            <p><strong>Waktu Kegiatan:</strong> 16 Februari 2023 - 19 Februari 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            }
+        });
+    </script>
+
+</body>
+
+</html>
