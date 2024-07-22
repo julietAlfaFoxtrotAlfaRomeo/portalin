@@ -52,6 +52,129 @@ body {
   font-size: 12px;
 }
 
+
+
+/*** Header carousel ***/
+@media (max-width: 768px) {
+  .header-carousel .owl-carousel-item {
+      position: relative;
+      min-height: 500px;
+  }
+  
+  .header-carousel .owl-carousel-item img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+
+.header-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+  margin: 7px 0;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  font-size: 22px;
+  transition: .5s;
+}
+
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.page-header {
+  background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-header-inner {
+  background: rgba(15, 23, 43, .7);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: var(--light);
+}
+
+
+/*** Section Title ***/
+.section-title {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 80px);
+  height: 2px;
+  top: 4px;
+  left: -40px;
+  background: var(--primary);
+  z-index: -1;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: calc(100% + 120px);
+  height: 2px;
+  bottom: 5px;
+  left: -60px;
+  background: var(--primary);
+  z-index: -1;
+}
+
+.section-title.text-start::before {
+  width: calc(100% + 40px);
+  left: 0;
+}
+
+.section-title.text-start::after {
+  width: calc(100% + 60px);
+  left: 0;
+}
+
+
+/*** Service ***/
+.service-item {
+  background: var(--light);
+  transition: .5s;
+}
+
+.service-item:hover {
+  margin-top: -10px;
+  background: var(--primary);
+}
+
+.service-item * {
+  transition: .5s;
+}
+
+.service-item:hover * {
+  color: var(--light) !important;
+}
+
+
 /* --------------------------------------------------------------------------------------------------------------
   --------------------------------------------------SLOGAN PORTALINDO----------------------------------------------
   -----------------------------------------------------------------------------------------------------------------
@@ -224,92 +347,32 @@ strong {
   -----------------------------------------------------------------------------------------------------------------
   ---------------------------------------FOOTER FOOTER FOOTER FOOTER-----------------------------------------------
   -------------------------------------------------------------------------------------------------------------- */
+/*** Footer Start ***/
 
-.site-footer {
-  background: #efefef;
-  font-size: 14px;
-  color: #888;
-  padding: 70px 0;
+.footer .short-link a,
+.footer .help-link a,
+.footer .contact-link a {
+    transition: .5s;
 }
 
-.site-footer a {
-  color: #777;
-  position: relative;
-  display: inline-block;
-  text-decoration: underline;
+.footer .short-link a:hover,
+.footer .help-link a:hover,
+.footer .contact-link a:hover {
+    letter-spacing: 1px;
 }
 
-.site-footer a:hover {
-  color: #000;
-  text-decoration: none;
+.footer .hightech-link a:hover {
+    background: var(--bs-secondary);
+    border: 0;
 }
 
-.site-footer a:hover:before {
-  background: #00204a;
-}
+/*** Footer End ***/
 
-.site-footer .footer-cta h2,
-.site-footer .footer-cta .h2 {
-  font-size: 30px;
-  color: #00204a;
-}
-
-.site-footer .btn:before {
-  display: none;
-}
-
-.site-footer .widget {
-  margin-bottom: 40px;
-  display: block;
-}
-
-.site-footer .widget h3,
-.site-footer .widget .h3 {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  color: #00204a;
-}
-
-.site-footer .widget .links {
-  width: 150px;
-}
-
-.site-footer .widget .links li {
-  margin-bottom: 10px;
-}
-
-.site-footer .social li {
-  display: inline-block;
-}
-
-.site-footer .social li a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  background: #ccc;
-  border-radius: 40%;
-}
-
-.site-footer .social li a:before {
-  display: none;
-}
-
-.site-footer .social li a > span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.site-footer .social li a:hover {
-  background: #00204a;
-  color: #fff;
-}
+/* --------------------------------------------------------------------------------------------------------------
+  ---------------------------------------FOOTER FOOTER FOOTER FOOTE------------------------------------------------
+  -----------------------------------------------------------------------------------------------------------------
+  ---------------------------------------FOOTER FOOTER FOOTER FOOTER-----------------------------------------------
+  -------------------------------------------------------------------------------------------------------------- */
 
 /* jadwal */
 .rotating-card-container {
