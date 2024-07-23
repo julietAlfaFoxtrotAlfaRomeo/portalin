@@ -1,440 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/pelaku-usaha.css" />
-    <title>Kemenda - Etalase Produk UMKM - Pelaku Usaha</title>
-  </head>
 
-  <body>
-    <!-- ========================================================================================================
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style/pelaku-usaha.css" />
+  <title>Kemenda - Etalase Produk UMKM - Pelaku Usaha</title>
+</head>
+
+<body>
+  <!-- ========================================================================================================
     ========================================= N A V B A R   S T A R T ===========================================
     ========================================================================================================= -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="/img/logo.png" height="45" class="me-1" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/img/logo.png" height="45" class="me-1" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Centered links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Etalase</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Katalog
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Kuliner</a></li>
+              <li><a class="dropdown-item" href="#">Fashion Muslim</a></li>
+              <li><a class="dropdown-item" href="#">Produk Halal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Pelaku Usaha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Publikasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/panduan.html">Panduan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Registrasi</a>
+          </li>
+        </ul>
+        <button type="button" class="loginbutton btn bg-merah me-5">
+          LOGIN
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Centered links -->
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Etalase</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Katalog
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Kuliner</a></li>
-                <li><a class="dropdown-item" href="#">Fashion Muslim</a></li>
-                <li><a class="dropdown-item" href="#">Produk Halal</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Pelaku Usaha</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Publikasi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/panduan.html"
-                >Panduan</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/contact-us.html"
-                >Contact Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Registrasi</a>
-            </li>
-          </ul>
-          <button type="button" class="loginbutton btn bg-merah me-5">
-            LOGIN
-          </button>
-          <a class="navbar-brand" href="#"
-            ><img src="/img/logo-bbi.png" height="45" class="me-1" alt=""
-          /></a>
-          <a class="navbar-brand" href="#"
-            ><img src="/img/call-centre.jpg" height="45" class="me-1" alt=""
-          /></a>
-        </div>
+        <a class="navbar-brand" href="#"><img src="/img/logo-bbi.png" height="45" class="me-1" alt="" /></a>
+        <a class="navbar-brand" href="#"><img src="/img/call-centre.jpg" height="45" class="me-1" alt="" /></a>
       </div>
-    </nav>
-    <!-- ========================================================================================================
+    </div>
+  </nav>
+  <!-- ========================================================================================================
     ========================================= N A V B A R   E N D ===============================================
     ========================================================================================================= -->
 
-    <section id="pelaku-usaha" class="pelaku-usaha">
-      <div class="container">
-        <div class="section-title">
-          <h2 style="color: #444444; font-weight: 700">Data</h2>
-          <p style="font-size: 22px; font-weight: 600">PELAKU USAHA</p>
+  <section id="pelaku-usaha" class="pelaku-usaha">
+    <div class="container">
+      <div class="section-title">
+        <div class="data">
+          <h6 style="color: #444444; font-weight: 700" class="text-uppercase data">Data</h6>
         </div>
-        <div class="row">
-          <table cellpadding="3" cellspacing="0" border="0" style="width: 60%">
-            <thead>
-              <tr>
-                <th>Pencarian spesifik</th>
-                <th>Tulis Kata</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr id="provinsi" data-column="5">
-                <td class="judul-provinsi">Provinsi</td>
-                <td>
-                  <select id="provinsi-select" onchange="updateKota()">
-                    <option selected="" value="">Semua Provinsi</option>
-                    <option value="NANGGROE ACEH DARUSSALAM">
-                      NANGGROE ACEH DARUSSALAM
-                    </option>
-                    <option value="SUMATERA UTARA">SUMATERA UTARA</option>
-                    <option value="SUMATERA BARAT">SUMATERA BARAT</option>
-                    <option value="RIAU">RIAU</option>
-                    <option value="JAMBI">JAMBI</option>
-                    <option value="SUMATERA SELATAN">SUMATERA SELATAN</option>
-                    <option value="BENGKULU">BENGKULU</option>
-                    <option value="LAMPUNG">LAMPUNG</option>
-                    <option value="KEPULAUAN BANGKA BELITUNG">
-                      KEPULAUAN BANGKA BELITUNG
-                    </option>
-                    <option value="KEPULAUAN RIAU">KEPULAUAN RIAU</option>
-                    <option value="DKI JAKARTA">DKI JAKARTA</option>
-                    <option value="JAWA BARAT">JAWA BARAT</option>
-                    <option value="JAWA TENGAH">JAWA TENGAH</option>
-                    <option value="DAERAH ISTIMEWA YOGYAKARTA">
-                      DAERAH ISTIMEWA YOGYAKARTA
-                    </option>
-                    <option value="JAWA TIMUR">JAWA TIMUR</option>
-                    <option value="BANTEN">BANTEN</option>
-                    <option value="BALI">BALI</option>
-                    <option value="NUSA TENGGARA BARAT">
-                      NUSA TENGGARA BARAT
-                    </option>
-                    <option value="NUSA TENGGARA TIMUR">
-                      NUSA TENGGARA TIMUR
-                    </option>
-                    <option value="KALIMANTAN BARAT">KALIMANTAN BARAT</option>
-                    <option value="KALIMANTAN TENGAH">KALIMANTAN TENGAH</option>
-                    <option value="KALIMANTAN SELATAN">
-                      KALIMANTAN SELATAN
-                    </option>
-                    <option value="KALIMANTAN TIMUR">KALIMANTAN TIMUR</option>
-                    <option value="KALIMANTAN UTARA">KALIMANTAN UTARA</option>
-                    <option value="SULAWESI UTARA">SULAWESI UTARA</option>
-                    <option value="SULAWESI TENGAH">SULAWESI TENGAH</option>
-                    <option value="SULAWESI SELATAN">SULAWESI SELATAN</option>
-                    <option value="SULAWESI TENGGARA">SULAWESI TENGGARA</option>
-                    <option value="GORONTALO">GORONTALO</option>
-                    <option value="SULAWESI BARAT">SULAWESI BARAT</option>
-                    <option value="MALUKU">MALUKU</option>
-                    <option value="MALUKU UTARA">MALUKU UTARA</option>
-                    <option value="PAPUA BARAT">PAPUA BARAT</option>
-                    <option value="PAPUA">PAPUA</option>
-                  </select>
-                </td>
-              </tr>
-              <tr id="kabupaten/kota" data-column="4">
-                <td class="judul-kota">Kabupaten / Kota</td>
-                <td>
-                  <select id="kota-select" disabled>
-                    <option value="">Semua Kota/Kabupaten</option>
-                  </select>
-                </td>
-              </tr>
-              <tr id="nama-perusahaan" data-column="1">
-                <td class="judul-nama-perusahaan" style="position: relative">
-                  Nama Perusahaan
-                </td>
-                <td>
-                  <input type="text" class="nama-perusahaan" />
-                  <button class="button-cari btn">Cari</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="table" style="margin-top: 30px">
-            <thead class="heading-table">
-              <tr>
-                <th>#</th>
-                <th>Nama Usaha</th>
-                <th>Produk</th>
-                <th>Alamat</th>
-                <th>Kabupaten / Kota</th>
-                <th>Provinsi</th>
-                <th>No. Telepon/HP</th>
-                <th>Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Kota Depok</td>
-                <td>JAWA BARAT</td>
-                <td>88888888888</td>
-                <td>Lorem, ipsum.@gmail.com</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Kota Depok</td>
-                <td>JAWA BARAT</td>
-                <td>88888888888</td>
-                <td>Lorem, ipsum.@gmail.com</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Kota Depok</td>
-                <td>JAWA BARAT</td>
-                <td>88888888888</td>
-                <td>Lorem, ipsum.@gmail.com</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Kota Depok</td>
-                <td>JAWA BARAT</td>
-                <td>88888888888</td>
-                <td>Lorem, ipsum.@gmail.com</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Kota Depok</td>
-                <td>JAWA BARAT</td>
-                <td>88888888888</td>
-                <td>Lorem, ipsum.@gmail.com</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Kota Depok</td>
-                <td>JAWA BARAT</td>
-                <td>88888888888</td>
-                <td>Lorem, ipsum.@gmail.com</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Kota Depok</td>
-                <td>JAWA BARAT</td>
-                <td>88888888888</td>
-                <td>Lorem, ipsum.@gmail.com</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Kota Depok</td>
-                <td>JAWA BARAT</td>
-                <td>88888888888</td>
-                <td>Lorem, ipsum.@gmail.com</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Kota Depok</td>
-                <td>JAWA BARAT</td>
-                <td>88888888888</td>
-                <td>Lorem, ipsum.@gmail.com</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Lorem, ipsum.</td>
-                <td>Lorem ipsum dolor sit.</td>
-                <td>Lorem ipsum dolor sit amet consectetur.</td>
-                <td>Kota Depok</td>
-                <td>JAWA BARAT</td>
-                <td>88888888888</td>
-                <td>Lorem, ipsum.@gmail.com</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <h1 class="pelaku">PELAKU USAHA</h1>
       </div>
-    </section>
-
-    <!-- ========================================================================================================
-    ============================================= FOOTER FOOTER =================================================
-    ========================================================================================================= -->
-    <div class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Contact</h3>
-              <address>43 Raymouth Rd. Baltemoer, London 3910</address>
-              <ul class="list-unstyled links">
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                <li>
-                  <a href="mailto:info@mydomain.com">info@mydomain.com</a>
-                </li>
-              </ul>
-            </div>
-            <!-- /.widget -->
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Sources</h3>
-              <ul class="list-unstyled float-start links">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Vision</a></li>
-                <li><a href="#">Mission</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
-              </ul>
-              <ul class="list-unstyled float-start links">
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Creative</a></li>
-              </ul>
-            </div>
-            <!-- /.widget -->
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Links</h3>
-              <ul class="list-unstyled links">
-                <li><a href="#">Our Vision</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-
-              <ul class="list-unstyled social">
-                <li>
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-linkedin"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-pinterest"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-dribbble"></span></a>
-                </li>
-              </ul>
-            </div>
-            <!-- /.widget -->
-          </div>
-          <!-- /.col-lg-4 -->
-        </div>
-        <!-- /.row -->
-
-        <div class="row mt-5">
-          <div class="col-12 text-center"></div>
-        </div>
+      <div class="row">
+        <table cellpadding="3" cellspacing="0" border="0" style="width: 60%">
+          <thead>
+            <tr>
+              <th>Pencarian spesifik</th>
+              <th>Tulis Kata</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="provinsi" data-column="5">
+              <td class="judul-provinsi">Provinsi</td>
+              <td>
+                <select id="provinsi-select" onchange="updateKota()">
+                  <option selected="" value="">Semua Provinsi</option>
+                  <option value="NANGGROE ACEH DARUSSALAM">
+                    NANGGROE ACEH DARUSSALAM
+                  </option>
+                  <option value="SUMATERA UTARA">SUMATERA UTARA</option>
+                  <option value="SUMATERA BARAT">SUMATERA BARAT</option>
+                  <option value="RIAU">RIAU</option>
+                  <option value="JAMBI">JAMBI</option>
+                  <option value="SUMATERA SELATAN">SUMATERA SELATAN</option>
+                  <option value="BENGKULU">BENGKULU</option>
+                  <option value="LAMPUNG">LAMPUNG</option>
+                  <option value="KEPULAUAN BANGKA BELITUNG">
+                    KEPULAUAN BANGKA BELITUNG
+                  </option>
+                  <option value="KEPULAUAN RIAU">KEPULAUAN RIAU</option>
+                  <option value="DKI JAKARTA">DKI JAKARTA</option>
+                  <option value="JAWA BARAT">JAWA BARAT</option>
+                  <option value="JAWA TENGAH">JAWA TENGAH</option>
+                  <option value="DAERAH ISTIMEWA YOGYAKARTA">
+                    DAERAH ISTIMEWA YOGYAKARTA
+                  </option>
+                  <option value="JAWA TIMUR">JAWA TIMUR</option>
+                  <option value="BANTEN">BANTEN</option>
+                  <option value="BALI">BALI</option>
+                  <option value="NUSA TENGGARA BARAT">
+                    NUSA TENGGARA BARAT
+                  </option>
+                  <option value="NUSA TENGGARA TIMUR">
+                    NUSA TENGGARA TIMUR
+                  </option>
+                  <option value="KALIMANTAN BARAT">KALIMANTAN BARAT</option>
+                  <option value="KALIMANTAN TENGAH">KALIMANTAN TENGAH</option>
+                  <option value="KALIMANTAN SELATAN">
+                    KALIMANTAN SELATAN
+                  </option>
+                  <option value="KALIMANTAN TIMUR">KALIMANTAN TIMUR</option>
+                  <option value="KALIMANTAN UTARA">KALIMANTAN UTARA</option>
+                  <option value="SULAWESI UTARA">SULAWESI UTARA</option>
+                  <option value="SULAWESI TENGAH">SULAWESI TENGAH</option>
+                  <option value="SULAWESI SELATAN">SULAWESI SELATAN</option>
+                  <option value="SULAWESI TENGGARA">SULAWESI TENGGARA</option>
+                  <option value="GORONTALO">GORONTALO</option>
+                  <option value="SULAWESI BARAT">SULAWESI BARAT</option>
+                  <option value="MALUKU">MALUKU</option>
+                  <option value="MALUKU UTARA">MALUKU UTARA</option>
+                  <option value="PAPUA BARAT">PAPUA BARAT</option>
+                  <option value="PAPUA">PAPUA</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="kabupaten/kota" data-column="4">
+              <td class="judul-kota">Kabupaten / Kota</td>
+              <td>
+                <select id="kota-select" disabled>
+                  <option value="">Semua Kota/Kabupaten</option>
+                </select>
+              </td>
+            </tr>
+            <tr id="nama-perusahaan" data-column="1">
+              <td class="judul-nama-perusahaan" style="position: relative">
+                Nama Perusahaan
+              </td>
+              <td>
+                <input type="text" class="nama-perusahaan" />
+                <button class="button-cari btn">Cari</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table" style="margin-top: 30px">
+          <thead class="heading-table">
+            <tr>
+              <th>#</th>
+              <th>Nama Usaha</th>
+              <th>Produk</th>
+              <th>Alamat</th>
+              <th>Kabupaten / Kota</th>
+              <th>Provinsi</th>
+              <th>No. Telepon/HP</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>Lorem, ipsum.</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <td>Kota Depok</td>
+              <td>JAWA BARAT</td>
+              <td>88888888888</td>
+              <td>Lorem, ipsum.@gmail.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Lorem, ipsum.</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <td>Kota Depok</td>
+              <td>JAWA BARAT</td>
+              <td>88888888888</td>
+              <td>Lorem, ipsum.@gmail.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Lorem, ipsum.</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <td>Kota Depok</td>
+              <td>JAWA BARAT</td>
+              <td>88888888888</td>
+              <td>Lorem, ipsum.@gmail.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Lorem, ipsum.</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <td>Kota Depok</td>
+              <td>JAWA BARAT</td>
+              <td>88888888888</td>
+              <td>Lorem, ipsum.@gmail.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Lorem, ipsum.</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <td>Kota Depok</td>
+              <td>JAWA BARAT</td>
+              <td>88888888888</td>
+              <td>Lorem, ipsum.@gmail.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Lorem, ipsum.</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <td>Kota Depok</td>
+              <td>JAWA BARAT</td>
+              <td>88888888888</td>
+              <td>Lorem, ipsum.@gmail.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Lorem, ipsum.</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <td>Kota Depok</td>
+              <td>JAWA BARAT</td>
+              <td>88888888888</td>
+              <td>Lorem, ipsum.@gmail.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Lorem, ipsum.</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <td>Kota Depok</td>
+              <td>JAWA BARAT</td>
+              <td>88888888888</td>
+              <td>Lorem, ipsum.@gmail.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Lorem, ipsum.</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <td>Kota Depok</td>
+              <td>JAWA BARAT</td>
+              <td>88888888888</td>
+              <td>Lorem, ipsum.@gmail.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Lorem, ipsum.</td>
+              <td>Lorem ipsum dolor sit.</td>
+              <td>Lorem ipsum dolor sit amet consectetur.</td>
+              <td>Kota Depok</td>
+              <td>JAWA BARAT</td>
+              <td>88888888888</td>
+              <td>Lorem, ipsum.@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+  </section>
 
-    <!-- ========================================================================================================
+  <!-- ========================================================================================================
+    ============================================= FOOTER FOOTER =================================================
+    ========================================================================================================= -->
+  <div class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Contact</h3>
+            <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+            <ul class="list-unstyled links">
+              <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+              <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+              <li>
+                <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Sources</h3>
+            <ul class="list-unstyled float-start links">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Vision</a></li>
+              <li><a href="#">Mission</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+            <ul class="list-unstyled float-start links">
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Creative</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Links</h3>
+            <ul class="list-unstyled links">
+              <li><a href="#">Our Vision</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+
+            <ul class="list-unstyled social">
+              <li>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-twitter"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-facebook"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-linkedin"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-pinterest"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-dribbble"></span></a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row mt-5">
+        <div class="col-12 text-center"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================================================
     ============================================= FOOTER FOOTER =================================================
     ========================================================================================================= -->
 
-    <!-- ==========================================================================================================
+  <!-- ==========================================================================================================
     ===========================SCRIPT JAVA SCRIPT -- SCRIPT JAVA SCRIPT============================================
     ===============================================================================================================
     ===========================SCRIPT JAVA SCRIPT -- SCRIPT JAVA SCRIPT============================================
     =========================================================================================================== -->
 
-    <script src="js/pelaku-usaha.js"></script>
+  <script src="js/pelaku-usaha.js"></script>
 
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

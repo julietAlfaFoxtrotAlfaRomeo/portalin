@@ -58,6 +58,41 @@ body {
     -------------------------------------------------- PELAKU USAHA -------------------------------------------
     -------------------------------------------------------------------------------------------------------------- */
 
+    #pelaku-usaha{
+      margin-top: 50px;
+    }
+.data {
+    display: flex;
+    align-items: center;
+}
+
+.data h6 {
+    color: #444444;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.data::after {
+    content: "";
+    flex-grow: 1;
+    max-width: 30px;
+    height: 1px; 
+    align-items: center;
+    background-color: #e71717;
+    margin-bottom: 5px; 
+}
+
+.pelaku{
+  color: #556270;
+  font-family: poppins;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+
 #provinsi-select,
 .nama-perusahaan,
 #kota-select {

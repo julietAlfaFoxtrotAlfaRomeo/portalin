@@ -4,205 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jadwal Kegiatan Dan Publikasi</title>
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Navbar with Smooth Moving Background</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        h1 {
-            text-align: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            color: #333;
+        .navbar-nav .nav-link {
+            position: relative;
+            padding: 10px 15px;
+            z-index: 1;
+            color: black;
+            /* Ganti dengan warna teks yang diinginkan */
+            transition: color 0.3s ease;
         }
 
-        .container-jadwal {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
+        .navbar-nav .nav-link:hover {
+            color: #fff;
+            /* Ganti dengan warna teks saat di-hover */
         }
 
-        .swiper-container {
-            padding: 20px 0;
-            overflow: hidden;
+        .dynamic-background {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #d9232d;
+            /* Ganti dengan warna yang diinginkan */
+            border-radius: 5px;
+            /* Menambahkan radius untuk tampilan yang lebih halus */
+            transition: transform 0.5s ease, width 0.5s ease;
+            z-index: 0;
         }
 
-        .swiper-slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .event {
-            display: flex;
-            align-items: flex-start;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background-color: #fff;
-            width: 100%;
-            max-width: 360px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 0 auto;
-        }
-
-        .event-icon {
-            font-size: 30px;
-            margin-right: 20px;
-            color: #ff5722;
-            /* Warna icon */
-        }
-
-        .event-details {
-            text-align: left;
-            width: calc(100% - 50px);
-        }
-
-        .event-details h6 {
-            margin: 0 0 10px;
-            font-size: 18px;
-            color: #333;
-        }
-
-        .event-details p {
-            margin: 0;
-            font-size: 16px;
-            color: #555;
-        }
-
-        .event-details p+p {
-            margin-top: 10px;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .event {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .event-icon {
-                margin-bottom: 10px;
-            }
-
-            .event-details {
-                width: 100%;
-            }
+        .navbar-nav {
+            position: relative;
         }
     </style>
 </head>
 
 <body>
-
-    <h1>Jadwal Kegiatan Dan Publikasi</h1>
-    <div class="container-jadwal">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="event">
-                        <div class="event-icon">
-                            <i class="bx bx-calendar"></i>
-                        </div>
-                        <div class="event-details">
-                            <h6><strong>13th Jakarta International Jewellery Fair</strong></h6>
-                            <p><strong>Penyelenggara:</strong> Asosiasi Pengusaha Emas dan Permata Indonesia</p>
-                            <p><strong>Waktu Kegiatan:</strong> 18 Agustus 2022 - 21 Agustus 2022</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="event">
-                        <div class="event-icon">
-                            <i class="bx bx-calendar"></i>
-                        </div>
-                        <div class="event-details">
-                            <h6><strong>8th Jogja Expo 2022</strong></h6>
-                            <p><strong>Penyelenggara:</strong> Pemerintah Kota Yogyakarta</p>
-                            <p><strong>Waktu Kegiatan:</strong> 25 Agustus 2022 - 28 Agustus 2022</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="event">
-                        <div class="event-icon">
-                            <i class="bx bx-calendar"></i>
-                        </div>
-                        <div class="event-details">
-                            <h6><strong>Health Expo 2022</strong></h6>
-                            <p><strong>Penyelenggara:</strong> Palang Merah Indonesia (PMI) Jawa Tengah</p>
-                            <p><strong>Waktu Kegiatan:</strong> 14 September 2022 - 18 September 2022</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="event">
-                        <div class="event-icon">
-                            <i class="bx bx-calendar"></i>
-                        </div>
-                        <div class="event-details">
-                            <h6><strong>Kriyanusa</strong></h6>
-                            <p><strong>Penyelenggara:</strong> Dewan Kerajinan Nasional</p>
-                            <p><strong>Waktu Kegiatan:</strong> 21 September 2022 - 25 September 2022</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="event">
-                        <div class="event-icon">
-                            <i class="bx bx-calendar"></i>
-                        </div>
-                        <div class="event-details">
-                            <h6><strong>Sail Tidore Expo 2022</strong></h6>
-                            <p><strong>Penyelenggara:</strong> Kementerian / Lembaga RI</p>
-                            <p><strong>Waktu Kegiatan:</strong> 24 November 2022 - 29 November 2022</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="event">
-                        <div class="event-icon">
-                            <i class="bx bx-calendar"></i>
-                        </div>
-                        <div class="event-details">
-                            <h6><strong>14th Jakarta International Jewellery Fair</strong></h6>
-                            <p><strong>Penyelenggara:</strong> Asosiasi Pengusaha Emas dan Permata Indonesia</p>
-                            <p><strong>Waktu Kegiatan:</strong> 16 Februari 2023 - 19 Februari 2023</p>
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="45" class="me-1" alt="" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Centered links -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <div class="dynamic-background"></div>
+                    <li class="nav-item">
+                        <a class="nav-link active home-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Etalase</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Katalog
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Kuliner</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion Muslim</a></li>
+                            <li><a class="dropdown-item" href="#">Produk Halal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/pelaku-usaha.html">Pelaku Usaha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Publikasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/panduan.html">Panduan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/registrasi.html">Registrasi</a>
+                    </li>
+                </ul>
+                <button type="button" class="loginbutton btn bg-merah me-5">
+                    LOGIN
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo-bbi.png" height="45" class="me-1" alt="" /></a>
+                <a class="navbar-brand" href="#"><img src="img/call-centre.jpg" height="45" class="me-1" alt="" /></a>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.navbar-nav .nav-link');
+            const dynamicBackground = document.querySelector('.dynamic-background');
+
+            function moveBackground(link) {
+                const rect = link.getBoundingClientRect();
+                const containerRect = link.closest('.navbar-nav').getBoundingClientRect();
+                dynamicBackground.style.width = `${rect.width}px`;
+                dynamicBackground.style.height = `${rect.height}px`;
+                dynamicBackground.style.transform = `translate(${rect.left - containerRect.left}px, ${rect.top - containerRect.top}px)`;
             }
+
+            links.forEach(link => {
+                link.addEventListener('mouseenter', () => moveBackground(link));
+                if (link.classList.contains('active')) {
+                    moveBackground(link);
+                }
+            });
+
+            document.querySelector('.navbar-nav').addEventListener('mouseleave', () => {
+                const activeLink = document.querySelector('.navbar-nav .nav-link.active');
+                if (activeLink) {
+                    moveBackground(activeLink);
+                } else {
+                    dynamicBackground.style.width = '0';
+                    dynamicBackground.style.height = '0';
+                }
+            });
         });
     </script>
-
 </body>
 
 </html>
