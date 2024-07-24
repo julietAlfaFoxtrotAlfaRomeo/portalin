@@ -1,0 +1,29 @@
+.navbar-nav .nav-link {
+            position: relative;
+            padding: 10px 15px;
+            z-index: 1;
+            color: black;
+            /* Ganti dengan warna teks yang diinginkan */
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fff;
+        }
+
+        .dynamic-background {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #d9232d;
+            /* Ganti dengan warna yang diinginkan */
+            border-radius: 5px;
+            /* Menambahkan radius untuk tampilan yang lebih halus */
+            transition: transform 0.5s ease, width 0.5s ease;
+            z-index: 0;
+        }
+
+        .navbar-nav {
+            position: relative;
+        }

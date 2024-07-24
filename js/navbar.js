@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const links = document.querySelectorAll('.navbar-nav .nav-link');
     const dynamicBackground = document.querySelector('.dynamic-background');
@@ -27,4 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
             dynamicBackground.style.height = '0';
         }
     });
+
+    // Move background to the active link on page load
+    const activeLink = document.querySelector('.navbar-nav .nav-link.active');
+    if (activeLink) {
+        moveBackground(activeLink);
+    }
 });
