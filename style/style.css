@@ -422,7 +422,6 @@ body {
   text-align: center;
   background-color: transparent;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   flex-direction: column; /* Menambahkan untuk menyusun elemen secara vertikal */
 }
 
@@ -461,6 +460,7 @@ body {
 .custom-buttons .custom-btn:hover {
   background-color: #000;
   color: #fff;
+  border: 1px solid black;
 }
 
 
